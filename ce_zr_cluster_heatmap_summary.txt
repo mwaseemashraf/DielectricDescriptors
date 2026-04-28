@@ -1,0 +1,51 @@
+Order 2 top cluster types:
+  3.649: frequency=16
+  3.600: frequency=14
+  5.230: frequency=8
+  1.630: frequency=6
+  2.730: frequency=6
+  3.952: frequency=6
+  3.179: frequency=5
+  5.091: frequency=5
+  4.104: frequency=4
+  6.349: frequency=3
+  2.059: frequency=2
+  4.674: frequency=2
+  5.346: frequency=2
+  7.200: frequency=2
+  0.000: frequency=1
+
+Order 3 top cluster types:
+  3.600,3.649,3.649: frequency=13
+  3.649,3.649,5.230: frequency=7
+  2.730,3.600,3.649: frequency=6
+  3.600,3.600,5.091: frequency=5
+  1.630,3.649,3.649: frequency=4
+  2.730,3.649,3.952: frequency=4
+  2.730,3.649,5.091: frequency=4
+  1.630,3.179,3.649: frequency=3
+  1.630,3.600,3.952: frequency=3
+  2.730,2.730,3.600: frequency=3
+  3.600,5.230,6.349: frequency=3
+  3.649,3.649,3.952: frequency=3
+  3.649,3.649,4.104: frequency=3
+  3.649,3.649,6.349: frequency=3
+  1.630,3.600,5.230: frequency=2
+
+Order 4 top cluster types:
+  3.600,3.600,3.649,3.649,3.649,3.649: frequency=8
+  2.730,3.600,3.600,3.649,3.649,5.091: frequency=5
+  2.730,2.730,3.600,3.600,3.649,5.091: frequency=4
+  2.730,2.730,3.649,3.649,3.952,5.091: frequency=4
+  3.600,3.649,3.649,3.649,3.649,5.230: frequency=4
+  2.730,2.730,3.600,3.600,3.649,3.649: frequency=3
+  2.730,2.730,3.600,3.649,3.649,3.952: frequency=3
+  2.730,2.730,3.600,3.649,3.649,5.091: frequency=3
+  2.730,3.600,3.600,3.649,3.649,3.649: frequency=3
+  3.600,3.600,5.230,5.230,6.349,6.349: frequency=3
+  3.600,3.649,3.649,3.649,5.230,6.349: frequency=3
+  3.649,3.649,3.649,3.649,5.230,5.230: frequency=3
+  3.649,3.649,3.649,3.649,5.230,6.349: frequency=3
+  1.630,1.630,3.179,3.649,3.649,3.649: frequency=2
+  1.630,3.179,3.179,3.600,3.649,3.649: frequency=2
+
