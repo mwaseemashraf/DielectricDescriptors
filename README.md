@@ -4,7 +4,7 @@ This repository contains descriptor analysis code for ceria-doped zirconia struc
 
 ## Dataset
 
-- `DielectricDescriptors/labeled_poscars/` contains POSCAR files for enumerated Ce/Zr/O structures.
+- `DielectricDescriptors/training_set/` contains POSCAR files for enumerated Ce/Zr/O structures.
 - Each POSCAR is one unique doped structure and uses Ce/Zr substitution on the zirconia lattice.
 - Most structures have a single Ce atom per cell, so local site descriptors are based on the Ce oxygen environment and periodic Ce/Zr cluster arrangements.
 
@@ -56,7 +56,7 @@ This repository contains descriptor analysis code for ceria-doped zirconia struc
 
 ## Findings so far
 
-- There are 16 unique structures in `labeled_poscars`.
+- There are 16 unique structures in `training_set`.
 - The local Ce symmetry analysis identified 14 distinct Ce environments across these structures.
 - Local descriptors are based on Ce–O coordination and bond-angle dispersion.
 - Cluster correlation analysis captures Ce/Zr occupancy patterns and provides pair/triplet/quadruplet descriptors for configurational sampling.

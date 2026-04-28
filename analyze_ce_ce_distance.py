@@ -2,7 +2,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-root = os.path.join(os.path.dirname(__file__), "labeled_poscars")
+root = os.path.join(os.path.dirname(__file__), "training_set")
 if not os.path.isdir(root):
     raise FileNotFoundError(f"Dataset folder not found: {root}")
 
@@ -11,7 +11,7 @@ poscar_files = sorted(
     key=lambda x: int("".join(filter(str.isdigit, x))) if any(ch.isdigit() for ch in x) else x,
 )
 if not poscar_files:
-    raise RuntimeError("No POSCAR files found in labeled_poscars")
+    raise RuntimeError("No POSCAR files found in training_set")
 
 results = []
 
@@ -123,7 +123,7 @@ plt.plot(indices, ce_o_mins, "^-", label="nearest Ce-O distance")
 plt.xticks(indices, files, rotation=45, ha="right", fontsize=8)
 plt.xlabel("Structure file")
 plt.ylabel("Distance (Å)")
-plt.title("Ce-based distance descriptors across labeled_poscars")
+plt.title("Ce-based distance descriptors across training_set")
 plt.legend()
 plt.tight_layout()
 plot_path = os.path.join(os.path.dirname(__file__), "ce_descriptor_plot.png")

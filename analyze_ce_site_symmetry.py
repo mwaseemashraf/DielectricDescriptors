@@ -2,7 +2,7 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 
-ROOT = os.path.join(os.path.dirname(__file__), "labeled_poscars")
+ROOT = os.path.join(os.path.dirname(__file__), "training_set")
 if not os.path.isdir(ROOT):
     raise FileNotFoundError(f"Dataset folder not found: {ROOT}")
 
@@ -11,7 +11,7 @@ poscar_files = sorted(
     key=lambda x: int("".join(filter(str.isdigit, x))) if any(ch.isdigit() for ch in x) else x,
 )
 if not poscar_files:
-    raise RuntimeError("No POSCAR files found in labeled_poscars")
+    raise RuntimeError("No POSCAR files found in training_set")
 
 
 def parse_poscar(path):

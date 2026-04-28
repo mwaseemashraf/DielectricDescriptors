@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from itertools import combinations
 
-ROOT = os.path.join(os.path.dirname(__file__), "labeled_poscars")
+ROOT = os.path.join(os.path.dirname(__file__), "training_set")
 if not os.path.isdir(ROOT):
     raise FileNotFoundError(f"Dataset folder not found: {ROOT}")
 
@@ -146,7 +146,7 @@ if __name__ == "__main__":
         all_correlation_vectors.append(corr_vectors)
 
     if not all_correlation_vectors:
-        raise RuntimeError("No doping structures found in labeled_poscars")
+        raise RuntimeError("No doping structures found in training_set")
 
     for order in (2, 3, 4):
         plot_path = os.path.join(os.path.dirname(__file__), f"ce_zr_cluster_order_{order}.png")

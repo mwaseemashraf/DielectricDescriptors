@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from itertools import combinations
 
-ROOT = os.path.join(os.path.dirname(__file__), "labeled_poscars")
+ROOT = os.path.join(os.path.dirname(__file__), "training_set")
 if not os.path.isdir(ROOT):
     raise FileNotFoundError(f"Dataset folder not found: {ROOT}")
 
